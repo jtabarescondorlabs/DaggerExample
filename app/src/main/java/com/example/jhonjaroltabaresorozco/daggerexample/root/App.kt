@@ -7,6 +7,7 @@ class App : Application() {
 
     lateinit var applicationComponent: ApplicationComponent
 
+    // For construct first time commend this block
     private fun initDagger(app: App): ApplicationComponent =
             DaggerApplicationComponent.builder()
                     .applicationModule(ApplicationModule(app))
